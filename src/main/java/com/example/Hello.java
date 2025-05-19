@@ -19,7 +19,7 @@ public class Hello {
     static class MyHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange t) throws IOException {
-            String response = "<html><body><h1 style='color:red;'>Hello I Got built pushed to ECR and then thus deployed here in EKS - All Green!</h1></body></html>";
+            String response = "<html><body><h1 style='color:blue;'>Hello I Got built pushed to ECR and then thus deployed here in EKS - All Green!</h1></body></html>";
             t.getResponseHeaders().add("Content-Type", "text/html");
             t.sendResponseHeaders(200, response.length());
             try (OutputStream os = t.getResponseBody()) {
