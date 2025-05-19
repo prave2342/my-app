@@ -3,7 +3,7 @@ pipeline {
     environment {
         ECR_REGISTRY = '307562441588.dkr.ecr.ap-south-1.amazonaws.com'
         ECR_REPOSITORY = 'dev-demo-ecr'
-        IMAGE_TAG = "java-app:${env.BUILD_NUMBER}"
+        IMAGE_TAG = "java-app-${env.BUILD_NUMBER}"
         FULL_IMAGE = "${ECR_REGISTRY}/${ECR_REPOSITORY}:${IMAGE_TAG}"
     }
     stages {
