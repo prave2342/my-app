@@ -30,7 +30,7 @@ This is a simple Java web application that runs an embedded HTTP server on port 
 - Build a **Docker image** from that file.
 - Push the image to **Amazon ECR**.
 - The image is then used for deployment on **Amazon EKS**.
-- 
+  
 ## Docker Image Versioning
 
 - Tag images using semantic versions build numbers (e.g., `myapp:build-123`).
